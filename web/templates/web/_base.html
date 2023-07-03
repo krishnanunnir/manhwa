@@ -14,13 +14,13 @@
 
     {% compress css %}
     <link rel="stylesheet" href="{% static 'src/output.css' %}">
-    <link rel="stylesheet" href="{% static '/output.css' %}">
+    <link rel="stylesheet" href="{% static 'web/css/home.css' %}">
     {% endcompress %}
 
 </head>
 
-<body class="bg-green-50">
-    <div class="container mx-auto mt-4">
+<body class="bg-color-main text-color-main">
+    <div class="container mt-4">
         {% block content %}
         {% endblock content %}
     </div>
