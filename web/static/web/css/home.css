@@ -5,3 +5,10 @@
 .text-color-main {
     color: #001c30;
 }
+
+.tag{
+    border-radius: 1rem;
+    margin-right: 0.8rem;
+    border: 1px solid #001c30;
+    padding: 0.6rem;
+}
