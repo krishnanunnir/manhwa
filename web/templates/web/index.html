@@ -6,22 +6,6 @@
 
   <!-- center div  -->
 
-  {% for manhwa in manhwas %}
-<div class="flex flex-row manhwa-item ml-24"> 
-  <div class="flex flex-col w-60 content-center items-center manhwa-image">
-    <img src="http://{{ request.get_host }}/media/{{manhwa.cover_image}}" alt="{{manhwa.title}}" class="mt-6 w-52">
-  </div>
-  <div class="flex flex-col mt-6 ml-4 max-w-lg manhwa-details">
-    <div class="flex flex-row text-3xl manhwa-title">{{manhwa.title}}</div>
-    <div class="flex flex-row mt-6 manhwa-tags">
-      {% for tag in manhwa.tags.all %}
-      <div class="tag">{{tag.name}}</div>
-      {% endfor %}
-    </div>
-    <div class="flex flex-row text-color-main mt-6 manhwa-description">{{manhwa.description}}</div>
-  </div>
-</div>
-{% endfor %}
-
+{% include "web/manhwa.html" %}
 
 {% endblock content %}

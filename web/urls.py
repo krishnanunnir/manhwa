@@ -9,5 +9,5 @@ from .views import ManhwaTemplateView
 
 urlpatterns = [
     path("", ManhwaTemplateView.as_view(), name="index"),
-    path("manhwa/<slug:slug>", ManhwaTemplateView.as_view(), name="manhwa"),
+    path("tags/<str:tag>", ManhwaTemplateView.as_view(), name="tag"),
 ]
